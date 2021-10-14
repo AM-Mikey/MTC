@@ -6,7 +6,7 @@ onready var imgBackGround = File.new()
 onready var strPlayerName = "Troll face So original"
 
 func _ready():
-	f.open('res://Dialog/Intro.txt', File.READ)
+	f.open('res://src/Dialog/Intro.txt', File.READ)
 	var line = f.get_line()
 	dialog.text = nextScript(line)
 	get_node("Dialog/Sprite").self_modulate.a = 0.5
