@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://sprTextbox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://tbtBackground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprCharacter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://lblDialogue.tscn" type="PackedScene" id=4]
+[ext_resource path="res://tbtBackground.gd" type="Script" id=5]
+[ext_resource path="res://hinted-RosaSans-Medium.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 6 )
+
+[node name="VisualScene" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource( 2 )]
+margin_right = 1920.0
+margin_bottom = 1080.0
+script = ExtResource( 5 )
+
+[node name="sprCharacter" parent="Background" instance=ExtResource( 3 )]
+position = Vector2( 910, 630 )
+scale = Vector2( 0.375, 0.375 )
+
+[node name="Dialog" parent="Background" instance=ExtResource( 4 )]
+margin_top = 800.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+custom_fonts/font = SubResource( 1 )
+text = "Bob the builder"
+percent_visible = 1.0
+
+[node name="Sprite" parent="Background/Dialog" instance=ExtResource( 1 )]
+show_behind_parent = true
+position = Vector2( 960, 119 )
