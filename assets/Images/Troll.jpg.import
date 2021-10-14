@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LabelText.png-62f2babbd700713db6099231b92137a5.stex"
+path="res://.import/Troll.jpg-6d56786fd02e806ebc1d785aedd54499.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/LabelText.png"
-dest_files=[ "res://.import/LabelText.png-62f2babbd700713db6099231b92137a5.stex" ]
+source_file="res://assets/Images/Troll.jpg"
+dest_files=[ "res://.import/Troll.jpg-6d56786fd02e806ebc1d785aedd54499.stex" ]
 
 [params]
 
