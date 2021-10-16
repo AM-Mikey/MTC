@@ -15,6 +15,9 @@ func nextScript(line):
 	
 	var script = ""
 	
+	if line == "[RHYTHM]":
+		get_tree().change_scene("res://src/Rhythm/RhythmScene.tscn")
+	
 	if line == "[PLAYER]":
 		script = str(script) + "\n" + "[" + strPlayerName + "]"
 		line = f.get_line()

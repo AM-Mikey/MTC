@@ -48,6 +48,8 @@ Oppe sorry to interrupt but I’m trying to get to class so I don’t have time 
 [ENVIRONMENT]
 After awkwardly cutting off TODD, the elevator shuts down and the two of you stand in silence until TODD starts humming to the elevator music. and banging his mop handle against the door to the beat.
 
+[RHYTHM]
+
 [?TODD?]
 > Great moves!
 > Keep it up!
