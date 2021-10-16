@@ -49,10 +49,7 @@ note_d={
 
 [layer_names]
 
-2d_physics/layer_11="note_a"
-2d_physics/layer_12="note_b"
-2d_physics/layer_13="note_c"
-2d_physics/layer_14="note_d"
+2d_physics/layer_11="cursor"
 
 [physics]
 

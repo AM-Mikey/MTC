@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/NoteHollow.png-570673a3fbe65a42815dbcd5c225221a.stex"
+path="res://.import/HealthOver.png-8200b7847efbd5357bd14f9008e169d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Rhythm/NoteHollow.png"
-dest_files=[ "res://.import/NoteHollow.png-570673a3fbe65a42815dbcd5c225221a.stex" ]
+source_file="res://assets/Rhythm/UI/HealthOver.png"
+dest_files=[ "res://.import/HealthOver.png-8200b7847efbd5357bd14f9008e169d1.stex" ]
 
 [params]
 

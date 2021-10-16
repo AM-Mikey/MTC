@@ -51,7 +51,7 @@ func setup_lane_lines():
 		
 		
 		line.add_point(line_pos)
-		line.add_point(Vector2(line_pos.x, -9999 ))
+		line.add_point(Vector2(line_pos.x, -99999 ))
 		
 		
 		line.begin_cap_mode = 1
@@ -80,6 +80,7 @@ func setup_measures():
 		add_child(measure)
 		measures_left -=1
 		measure_pos.y -= measure_distance
+
 
 func _physics_process(delta):
 	var beats_per_minute = tempo

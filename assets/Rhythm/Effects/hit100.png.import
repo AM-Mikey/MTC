@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Note.png-16f49677419a5afb4102af745d479f89.stex"
+path="res://.import/hit100.png-8d3c66718f7a8369929db8615cc426ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Rhythm/Note.png"
-dest_files=[ "res://.import/Note.png-16f49677419a5afb4102af745d479f89.stex" ]
+source_file="res://assets/Rhythm/Effects/hit100.png"
+dest_files=[ "res://.import/hit100.png-8d3c66718f7a8369929db8615cc426ab.stex" ]
 
 [params]
 
