@@ -2,11 +2,12 @@ extends TextureButton
 
 onready var dialog = get_node("Dialog")
 onready var f = File.new()
+onready var scenes = ['res://src/Dialog/Intro.txt']
 onready var imgBackGround = File.new()
 onready var strPlayerName = "Troll face So original"
 
 func _ready():
-	f.open('res://src/Dialog/Intro.txt', File.READ)
+	f.open(scenes[nodGlobal.intVisualNovelScene], File.READ)
 	var line = f.get_line()
 	dialog.text = nextScript(line)
 	get_node("Dialog/Sprite").self_modulate.a = 0.5
