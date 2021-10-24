@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://assets/Images/Black.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/Images/Sample Title.png" type="Texture" id=2]
@@ -6,12 +6,44 @@
 [ext_resource path="res://src/Main Menu/btnStart.gd" type="Script" id=4]
 [ext_resource path="res://src/Main Menu/btnQuit.gd" type="Script" id=5]
 [ext_resource path="res://assets/Images/Janitor.png" type="Texture" id=6]
+[ext_resource path="res://src/Audio/Usada Pekora laughing smol compilation.mp3" type="AudioStream" id=7]
+[ext_resource path="res://src/Main Menu/btnLoad.gd" type="Script" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
 outline_size = 4
 outline_color = Color( 0.105882, 0.427451, 0.882353, 1 )
 font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "FadeBlack"
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "FadeOut"
+tracks/0/type = "value"
+tracks/0/path = NodePath("../ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
 
 [node name="nodMainMenu" type="Node2D"]
 
@@ -42,6 +74,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="btnStart"]
+anims/FadeBlack = SubResource( 2 )
+anims/FadeOut = SubResource( 3 )
+
 [node name="btnLoad" type="Button" parent="."]
 margin_left = 128.0
 margin_top = 640.0
@@ -50,9 +86,13 @@ margin_bottom = 768.0
 custom_fonts/font = SubResource( 1 )
 text = "LOAD"
 flat = true
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="aspTest" type="AudioStreamPlayer2D" parent="btnLoad"]
+stream = ExtResource( 7 )
 
 [node name="btnOptions" type="Button" parent="."]
 margin_left = 112.0
@@ -78,3 +118,15 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="animation_finished" from="btnStart/AnimationPlayer" to="btnStart" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="mouse_entered" from="btnLoad" to="btnLoad" method="_on_btnLoad_mouse_entered"]

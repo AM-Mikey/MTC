@@ -21,7 +21,6 @@ __meta__ = {
 position = Vector2( 512, 320 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-bus = "Music"
 
 [node name="Cursor" type="Area2D" parent="."]
 position = Vector2( 512, 1728 )

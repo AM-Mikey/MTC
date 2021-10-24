@@ -1,5 +1,4 @@
-[BACKGROUND]
-res://Images/Troll.jpg
+[SCHOOL]
 [ENVIRONMENT]
 You walk up the campus you have seen online and in brochures a thousand times. Although you have never seen it in person before, you stands a big gate with the GCC logo standing proud above it welcoming you to campus.
 
