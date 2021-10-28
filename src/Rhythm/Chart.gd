@@ -109,7 +109,14 @@ func load_data():
 
 
 func spawn_note(note_lane, note_start_time, note_value):
-	var note = load("res://src/Rhythm/Note.tscn").instance()
+	var note
+	
+	### determine if single or held note
+	
+	if note_value == 0:
+		note = load("res://src/Rhythm/NoteSingle.tscn").instance()
+	else: 
+		note = load("res://src/Rhythm/NoteHeld.tscn").instance()
 	
 	note.width = line_distance
 	
