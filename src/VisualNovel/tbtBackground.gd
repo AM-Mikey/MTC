@@ -7,7 +7,7 @@ onready var imgBackGround = File.new()
 onready var strPlayerName = "Troll face So original"
 
 func _ready():
-	f.open(scenes[nodGlobal.intScene], File.READ)
+	f.open(scenes[sigGlobal.intScene], File.READ)
 	var line = f.get_line()
 	dialog.text = nextScript(line)
 	get_node("Dialog/Sprite").self_modulate.a = 0.5
@@ -16,8 +16,17 @@ func nextScript(line):
 	
 	var script = ""
 	
+	if line == "[BROCHURES]":
+		self.set_normal_texture(load('res://assets/Images/Background/map.jpg'))
+		line = f.get_line()
+	
+	if line == "[POSTER]":
+		self.set_normal_texture(load('res://assets/Images/Background/poster.jpg'))
+		line = f.get_line()
+	
+		
 	if line == "[RHYTHM]":
-		get_tree().change_scene("res://src/Rhythm/RhythmScene.tscn")
+		get_tree().change_scene("res://src/Rhythm/World3D.tscn")
 		
 	
 	if line == '[SCHOOL]':

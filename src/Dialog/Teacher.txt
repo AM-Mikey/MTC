@@ -11,8 +11,7 @@ You arrive at class and students seem to be pouring out of the classroom. You wa
 Sorry I’m a little bit late but what are we doing now professor?
 
 [TEACHER]
-Oh are you {player}.
-Why weren’t you here today!!!?!
+Oh are you {player}? Why weren’t you here today!!!?!
 
 [PLAYER]
 What do you mean I’m here now, I got stuck in the elevator you se-
@@ -43,6 +42,4 @@ Most of the class got their homework done in class, remember to have it signed a
 You walk outside and no-one is in sight, everyone has left.
 
 [PLAYER]
-Ohhhh maan, how am I gonna get these signatures?
-If everyone has already done the assignment they won’t want to talk to me?
-Although this could be a good way to meet people for the battle of the bands maybe?!
+Ohhhh maan, how am I gonna get these signatures? If everyone has already done the assignment they won’t want to talk to me? Although this could be a good way to meet people for the battle of the bands maybe?!

@@ -20,7 +20,8 @@ default_bus_layout=""
 
 [autoload]
 
-nodGlobal="*res://src/Singleton/Gobal.gd"
+sigGlobal="*res://src/Singleton/Gobal.gd"
+nodTransition="*res://src/nodTransition.tscn"
 
 [display]
 
