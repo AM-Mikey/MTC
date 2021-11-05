@@ -1,6 +1,7 @@
 extends Node2D
 
-var chart_path = "res://src/Rhythm/Charts/test.json"
+var levels = ["res://src/Rhythm/Charts/test.json", "res://src/Rhythm/Charts/test.json"]
+var chart_path = levels[sigGlobal.intScene]
 var data
 
 var note_depth = -16

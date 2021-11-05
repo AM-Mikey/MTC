@@ -1,21 +1,20 @@
 [OUTSIDE]
 [ENVIRONMENT]
-You walk up the campus you have seen online and in brochures a thousand times. Although you have never seen it in person Before; infront of you stands a big gate with the GCC logo standing proud above it welcoming you to campus
-
+You walk up the campus you have seen online and in brochures a thousand times. Although you have never seen it in person Before; infront of you stands a big gate with the GCC logo standing proud above it welcoming you to campus.
 
 [PLAYER]
 Woww I can’t believe after all this time I’m finally here at GCC, it is more colorful  in person than I thought.
 
+[STAIRS]
 [ENVIRONMENT]
 as you walk into the music building for the first time you are overwhelmed by the number of students here at GCC.
 
 [PLAYER]
 Whew, I finally made it to the music wing here at GCC. I have a lot of tough classes ahead of me, but I should also remember to have fun. Maybe I should look for some clubs to join.
 
+[POSTER]
 [ENVIRONMENT]
-Through all the bustling students going to and from you see a poster on a cork board that catches your eye. One advertising a battle for the bands.
-
-seems interesting enough but it says here that you need to have a band consisting of X students.
+Through all the bustling students going to and from you see a poster on a cork board that catches your eye. One advertising a battle for the bands. Seems interesting enough but it says here that you need to have a band consisting of X students.
 
 [PLAYER]
 Well that’s just too bad. I just moved here to GCC and don’t know anyone yet. Might be a fun thing to do another year but for now I should just stick to getting to class on ti--.

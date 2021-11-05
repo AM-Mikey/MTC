@@ -20,6 +20,10 @@ func nextScript(line):
 		self.set_normal_texture(load('res://assets/Images/Background/map.jpg'))
 		line = f.get_line()
 	
+	if line == "[POSTER]":
+		self.set_normal_texture(load('res://assets/Images/Background/poster.jpg'))
+		line = f.get_line()
+	
 	if line == "[JANITOR]":
 		
 		if currentSprite == "[JANITOR]":
