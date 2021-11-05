@@ -20,7 +20,7 @@ __meta__ = {
 [node name="Chart" parent="." instance=ExtResource( 3 )]
 position = Vector2( 512, 320 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="aspMusic" type="AudioStreamPlayer" parent="."]
 
 [node name="Cursor" type="Area2D" parent="."]
 position = Vector2( 512, 1728 )
@@ -39,3 +39,5 @@ color = Color( 1, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="finished" from="aspMusic" to="." method="_on_aspMusic_finished"]

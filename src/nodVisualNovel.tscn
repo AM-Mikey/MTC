@@ -1,6 +1,5 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/Images/Placeholder.png" type="Texture" id=1]
 [ext_resource path="res://assets/Images/Black.jpg" type="Texture" id=2]
 [ext_resource path="res://src/VisualNovel/tbtBackground.gd" type="Script" id=5]
 [ext_resource path="res://assets/Fonts/hinted-RosaSans-Medium.ttf" type="DynamicFontData" id=6]
@@ -23,9 +22,8 @@ __meta__ = {
 }
 
 [node name="sprCharacter" type="Sprite" parent="Background"]
-position = Vector2( 910, 630 )
-scale = Vector2( 0.375, 0.375 )
-texture = ExtResource( 1 )
+position = Vector2( 920, 584 )
+scale = Vector2( 0.743125, 0.702083 )
 
 [node name="Dialog" type="Label" parent="Background"]
 margin_top = 800.0

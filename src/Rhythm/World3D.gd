@@ -20,9 +20,7 @@ func _physics_process(delta):
 			health = 100
 		if health < 0:
 			health = 0
-		
-		health -= 0.05
-		
+			get_tree().change_scene("res://src/nodGameOver.tscn")
 		
 		emit_signal("health_updated", health)
 		
