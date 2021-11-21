@@ -27,7 +27,10 @@ func _ready():
 	$Panel.margin_bottom = length * 0.5
 	$Panel.margin_left = width * -0.5
 	$Panel.margin_right = width * 0.5
-
+	
+	$CollisionShape2D.shape.extents = Vector2(20, 20)
+	
+	
 
 func _on_HitDetector_area_entered(area):
 	able = true

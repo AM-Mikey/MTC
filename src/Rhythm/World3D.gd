@@ -9,6 +9,9 @@ var started = false
 var health: float = 100
 
 func _ready():
+	if sigGlobal.gamedata.intScene == 1:
+		get_tree().change_scene("res://src/nodGameOver.tscn")
+		
 	connect("health_updated", $UILayer/Health, "on_health_updated")
 	yield(get_tree().create_timer(1.6), "timeout")
 	started = true

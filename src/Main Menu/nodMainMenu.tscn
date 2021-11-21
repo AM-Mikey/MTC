@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/Images/Janitor.png" type="Texture" id=6]
 [ext_resource path="res://src/Audio/Usada Pekora laughing smol compilation.mp3" type="AudioStream" id=7]
 [ext_resource path="res://src/Main Menu/btnLoad.gd" type="Script" id=8]
-[ext_resource path="res://src/Audio/Background2.wav" type="AudioStream" id=9]
+[ext_resource path="res://src/Audio/TitleThemeDemo.wav" type="AudioStream" id=9]
 [ext_resource path="res://src/Main Menu/nodMainMenu.gd" type="Script" id=10]
 
 [sub_resource type="DynamicFont" id=1]

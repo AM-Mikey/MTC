@@ -26,6 +26,10 @@ func _ready():
 	$Panel.margin_top = length * -1
 	$Panel.margin_left = width * -0.5
 	$Panel.margin_right = width * 0.5
+	
+	get_node("HitDetector/CollisionShape2D").shape = RectangleShape2D.new()
+	get_node("HitDetector/CollisionShape2D").position.y = $Panel.rect_position.y / 2
+	get_node("HitDetector/CollisionShape2D").shape.extents.y = $Panel.rect_position.y / 2
 
 
 func _on_HitDetector_area_entered(area):

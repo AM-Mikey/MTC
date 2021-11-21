@@ -1,4 +1,6 @@
 extends Node
 
-var intScene = 0
-var strProtagName = "???"
+var gamedata = {
+	"intScene" : 1,
+	"strProtagName" : "???",
+	"scriptLine" : " "}

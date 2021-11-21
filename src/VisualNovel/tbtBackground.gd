@@ -7,7 +7,7 @@ onready var imgBackGround = File.new()
 onready var currentSprite = ""
 
 func _ready():
-	f.open(scenes[sigGlobal.intScene], File.READ)
+	f.open(scenes[sigGlobal.gamedata["intScene"]], File.READ)
 	var line = f.get_line()
 	dialog.text = nextScript(line)
 	get_node("Dialog/Sprite").self_modulate.a = 0.5
@@ -42,8 +42,28 @@ func nextScript(line):
 		self.set_normal_texture(load('res://assets/Images/Background/outside final.PNG'))
 		line = f.get_line()
 	
+	if line == "[ELEVATORDOOR]":
+		self.set_normal_texture(load('res://assets/Images/Background/ElevatorDoor.jpg'))
+		line = f.get_line()
+	
+	if line == "[ELEVATOR]":
+		self.set_normal_texture(load('res://assets/Images/Background/elevator.jpg'))
+		line = f.get_line()
+	
 	if line == "[STAIRS]":
 		self.set_normal_texture(load('res://assets/Images/Background/stairs final.PNG'))
+		line = f.get_line()
+	
+	if line == "[LECTURE]":
+		self.set_normal_texture(load('res://assets/Images/Background/lecturehall final.jpg'))
+		line = f.get_line()
+	
+	if line == "[PATH4]":
+		self.set_normal_texture(load('res://assets/Images/Background/path4.jpg'))
+		line = f.get_line()
+	
+	if line == "[PEPBENCH]":
+		self.set_normal_texture(load('res://assets/Images/Background/pplonbench.jpg'))
 		line = f.get_line()
 	
 	if line == "[RHYTHM]":
@@ -55,7 +75,7 @@ func nextScript(line):
 		line = f.get_line()
 	
 	if line == "[PLAYER]":
-		get_node("CurrentCharacter").text = "[" + sigGlobal.strProtagName + "]"
+		get_node("CurrentCharacter").text = "[" + sigGlobal.gamedata.strProtagName + "]"
 		line = f.get_line()
 	
 	if line == "[ENVIRONMENT]":
@@ -86,5 +106,5 @@ func _pressed():
 
 func _on_liePlayerInput_text_entered(new_text):
 	self.disabled = false
-	sigGlobal.strProtagName = new_text
+	sigGlobal.gamedata.strProtagName = new_text
 	get_node("liePlayerInput").visible = false

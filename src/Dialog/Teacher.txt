@@ -1,14 +1,16 @@
 [JANITOR]
 [ELEVATOR]
+[ENVIRONMENT]
 After jamming out with the janitor for a long time the elevator finally gets fixed.
 
 [PLAYER]
 Sorry mr. janitor but I gotta get to class.
 
-[JANITOR]
+[???]
 Sure thing kid. Ya got goooooood rhythm.
 
 [JANITOR]
+[LECTURE]
 [ENVIRONMENT]
 You arrive at class and students seem to be pouring out of the classroom. You walk in to see what is happening.
 
@@ -42,6 +44,7 @@ You quickly write down the homework from the first day: Meet 5 people from your 
 [TEACHER]
 Most of the class got their homework done in class, remember to have it signed and ready for tomorrow.
 
+[PATH4]
 [ENVIRONMENT]
 You walk outside the classroom into the hall,  and no-one is in sight, everyone has left.
 
@@ -57,9 +60,9 @@ The player leaves the lecture building onto the same campus quad as before. Load
 [PLAYER]
 Alright. Who can I get to sign my paper? I don’t know if any of these people are in my class.
 
+[PEPBENCH]
 [ENVIRONMENT]
 The background focuses on a character on a bench using a laptop with headphones on. The girl who talked to the professor after class ended.
-
 
 [PLAYER]
 Hey, I know her. She told off the professor earlier. I should ask her to sign my paper and I should probably say thanks.
@@ -123,3 +126,5 @@ Mind if I take a listen?
 
 [ANNIE]
 sure, let me turn it up
+
+[RHYTHM]

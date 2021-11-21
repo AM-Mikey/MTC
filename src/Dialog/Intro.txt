@@ -25,9 +25,9 @@ OMG! I have class in 5 minutes, I can’t be late to my first class 😲.
 
 But the stairs are wet. When did that get there? I can’t go up them! I guess I have to use the Elevator.
 
+[ELEVATORDOOR]
 [ENVIRONMENT]
 You go over to the elevator and press the button, looking at the time again. As you slide into the elevator and press for floor two you see a custodian coming from the basement with a mop.
-
 
 [PLAYER]
 Oh sorry for getting in your way and for using the elevator, you see I’m running late for class.
@@ -46,6 +46,7 @@ My name is To--
 [PLAYER]
 Oppe sorry to interrupt but I’m trying to get to class so I don’t have time to chat. Sorry.
 
+[ELEVATOR]
 [ENVIRONMENT]
 After awkwardly cutting off the janitor, the elevator shuts down and the two of you stand in silence until the janitor starts humming to the elevator music. and banging his mop handle against the door to the beat.
 
